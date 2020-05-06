@@ -9,6 +9,7 @@ Each leg controller will control 2 legs and hence indirectly control 6 joints. T
 
 The joint controllers communicate with the leg controllers in an asynchronous manner and communication is initiated by the joint controllers. Same is the manner of communication between the leg controllers and the main controller.
 
+The main controller can be the Raspberry Pi for computational power and the leg and joint controllers can be the ESP32 as the leg and joint controllers need to be small and light weight as compared to the body.
 ## Sensors for present state detection
 The sensors on this bot can be classified into internal sensors and external sensors, internal sensors for detection of the orientation and state of the bot, external sensors for evaluating the environment.
 ### Internal Sensors
