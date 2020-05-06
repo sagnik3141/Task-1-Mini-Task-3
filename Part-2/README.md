@@ -16,7 +16,7 @@ The sensors on this bot can be classified into internal sensors and external sen
 * Rotary encoder for the angular position of the joints. As there are 18 joints, we will need 18 encoders.
 * Inclinometers to detect the orientation of the bot with respect to the horizontal level. We will need two of them, one to detect front-back inclination, and the other to detect left-right inclination.
 ### External Sensors
-* For each of the 6 legs, there can be contact sensors at the end of each of them to avoid emergency situations.
+* For each of the 6 legs, there can be contact sensors at the end of each of them. This will help in detecting an emergency situation like the absence of support fro the leg or the presence of an obstacle. If it is detected, the controller can initiate a backward movement until the leg is locked.
 * Several Ultrasonic Distance Sensors attached around the body for obstacle detection purposes.
 ## Data Flow
 * The data from the contact sensors at the leg end are sent to the corresponding leg controller. The feedback from the contact sensors ends at the level of the leg controller.
