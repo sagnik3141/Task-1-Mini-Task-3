@@ -4,6 +4,7 @@ Make a ring that glows when a person wears it.
 ## Mechanism for Detection
 ![](darlington.gif)
 * The main objective of this project is to make it as small as possible. **A Darlington Circuit** can act as a touch sensor.
+* I got this idea from **Project-24** of **Mini Task 1** where it is also used as a touch sensor.
 * A Darlington circuit is simple in connections, yet it has excellent features.
 * Darlington pair can be defined as two bipolar transistors connected in such a way that the current amplified by the first one is further amplified by the second transistor.
 * As shown above we have used two **BC547** transistors whose collectors are tied to gather and the emitter of the first transistor is connected with the Base of the second transistor.
