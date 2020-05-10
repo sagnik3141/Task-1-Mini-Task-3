@@ -16,5 +16,6 @@ The original solution makes use of DC motors. I think stepper motors would be a 
 * However, IR distance sensors are generally short-range solutions.
 
 [//]: # (Get details of commercially available sensors)
+[//]: # (Get stuff from Arduino forum and Harvard website)
 [//]: # (Write about microcontroller, and then power compatibility of sensors with microcontroller)
 [//]: # (Also, stuff about PIC simulator and algorithm)
