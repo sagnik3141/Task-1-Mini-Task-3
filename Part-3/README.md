@@ -14,5 +14,6 @@ The original solution makes use of DC motors. I think stepper motors would be a 
 * IR sensors are **cheaper** compared to Ultrasonic distance sensors.
 * IR triangulation has a **small form factor** and a lightweight construction.
 * However, IR distance sensors are generally short-range solutions.
-[comment]: <> (Write about microcontroller, and then power compatibility of sensors with microcontroller)
-[comment]: <> (Also, stuff about PIC simulator and algorithm)
+
+[//]: # (Write about microcontroller, and then power compatibility of sensors with microcontroller)
+[//]: # (Also, stuff about PIC simulator and algorithm)
