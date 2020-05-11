@@ -19,7 +19,7 @@ The original solution makes use of DC motors. I think stepper motors would be a 
 * The **GY-53 VL53L0X Laser ToF Sensor** should be retained from the original solution.
 * **RKI-5103** which is a rotary encoder will also be required to determine the distance travelled.
 ## Microcontroller
-In my opinion, the ESP32 board is well suited for the micromouse because it is powerful, lightweight and has sufficient memory.
+In my opinion, the **ESP32** board is well suited for the micromouse because it is powerful, lightweight and has sufficient memory.
 ## Power Supply
 * A 5V power bank should do the job.
 * **28BYJ-48 Stepper Motor** and **ULN2003 Stepper Motor Driver** should be connected to the 5V supply.
