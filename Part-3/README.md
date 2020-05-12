@@ -7,6 +7,7 @@ The original solution makes use of DC motors. I think stepper motors would be a 
 ### Cons
 * Not very powerful as compared to DC motors but for the current application, it works well.
 * Complex control requirements, but it can be overcome by a stepper motor controller.
+
 **28BYJ-48 Stepper Motor** and **ULN2003 Stepper Motor Driver** are good options.
 ## Sensors
 * The Ultrasonic Sensor used in the front in the original solution can be replaced by an **IR Triangulation sensor** or an **IR ToF sensor**.
