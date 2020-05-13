@@ -10,6 +10,8 @@ Each leg controller will control 2 legs and hence indirectly control 6 joints. T
 The joint controllers communicate with the leg controllers in an asynchronous manner and communication is initiated by the joint controllers. Same is the manner of communication between the leg controllers and the main controller.
 
 The main controller can be the **Raspberry Pi** for computational power and the leg and joint controllers can be the **ESP32** as the leg and joint controllers need to be small and light weight as compared to the body.
+
+The **MPU-6050** IMU sensors can be used at the joints.
 ## Sensors for present state detection
 The sensors on this bot can be classified into internal sensors and external sensors, internal sensors for detection of the orientation and state of the bot, external sensors for evaluating the environment.
 ### Internal Sensors
@@ -19,8 +21,10 @@ The sensors on this bot can be classified into internal sensors and external sen
 * For each of the 6 legs, there can be contact/proximity sensors at the end of each of them. This will help in detecting an emergency situation like the absence of support for the leg or the presence of an obstacle. If it is detected, the controller can initiate a backward movement until the leg is locked. **ROBOIN0084S** sensor will do the job.
 * Several **Ultrasonic Distance Sensors (HC-SR04)** attached around the body for obstacle detection purposes.
 ## Data Flow
+* The ESP32 microcontrollers can communicate with the Raspberry Pi (main controller) through WiFi using MQTT. This would also solve the problem of wires getting entangled as we have established wireless communication.
+* MPU-6050 IMU sensors can communicate with the joint controllers through I2C protocol.
 * The data from the contact sensors at the leg end are sent to the corresponding leg controller. The feedback from the contact sensors ends at the level of the leg controller.
-* Each joint controller uses angular values sent from the leg/main controllers and then provides a feedback loop using the digital encoders.
+* Each joint controller uses angular values sent from the leg/main controllers and then provides a feedback loop using the digital encoders
 * The main controller gets data directly from the inclinometers and then accordingly directs the leg controllers in the case that recovery behaviour is required.
 * The Ultrasonic Distance sensors send data directly to the main controller. The main controller directs the leg controllers accordingly based on the external environment.
 ## Control System
@@ -28,3 +32,5 @@ The sensors on this bot can be classified into internal sensors and external sen
 * It initiates recovery behaviour during emergency situations.
 * It organises communication with the user.
 * It supervises motor control.
+## Visualising the bot on a computer
+A Robotics Simulation Software like Webots can be used. It has support for a wide variety of sensors and microcontrollers.
