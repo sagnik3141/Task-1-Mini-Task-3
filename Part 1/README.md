@@ -12,4 +12,8 @@ Make a ring that glows when a person wears it.
 * Our body acts as a ground here so whenever we touch the base of the transistor the second transistor gets biased. Using this to our favour we have built the touch sensor for this project.
 ## Power Supply
 As it is a ring and we cannot afford to use anything that takes up a lot of space, two 1.5V button cells is appropriate for this project.
-##
+## Final Structure
+* The Darlington Pair will be connected on the interior of the ring.
+* The output of the Darlington Pair can be directly connected to the LED.
+* Whenever someone puts on the ring the Darlington Pair gets activated and the LED glows.
+* A small microcontroller like ATTINY45 can be connected to the output of the Darlington Pair. Additional LEDs can be connected and the microcontroller can be programmed to display special effects the the circuit is activated (when someone wears it).
