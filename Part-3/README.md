@@ -26,12 +26,8 @@ In my opinion, the **ESP32** board is well suited for the micromouse because it 
 * **28BYJ-48 Stepper Motor** and **ULN2003 Stepper Motor Driver** should be connected to the 5V supply.
 * **RKI-3141 IR sensor** should be connected to the 3.3V supply.
 * **GY-53 VL53L0X Laser ToF Sensor** can be connected to either.
-## Algorithm and Software
+## Algorithm
 * After doing a little research, I found that Micromouse Robots generally use one out of the three algorithms: **Wall Following**, **Depth First Search** and **Flood Fill**.
 * Out of these, Wall Following is not very useful because most mazes are designed such that this algorithm will fail.
 * Depth First Search goes through the full maze and it takes a lot of time.
 * This leaves us with **Flood Fill** Algorithm.
-
-[//]: # (Get stuff from Arduino forum and Harvard website)
-[//]: # (Write about microcontroller, and then power compatibility of sensors with microcontroller)
-[//]: # (Also, stuff about PIC simulator and algorithm)
